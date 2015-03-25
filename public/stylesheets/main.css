@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+/* color setup */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  p {
+    /* 	font-family: 'Open Sans', sans-serif; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+  }
+
+  .btn, button {
+    font-size: 14px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    /*	font-family: 'Playfair Display SC', serif;	*/
+    font-family: 'Oswald', sans-serif;
+  }
+
+  p {
+    /* 	font-family: 'Open Sans', sans-serif; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 28px;
+  }
+
+  .btn, button {
+    font-size: 22px;
+  }
+}
+/*==================================================
+=            Mixins                                =
+==================================================*/
+/*==================================================
+=            Main Page                             =
+==================================================*/
+/* navbar */
+.navbar-default {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border-bottom: 2px solid transparent;
+  font-family: mohave;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default.active {
+  color: #fff;
+  background-color: #777;
+  background-image: none;
+  border-bottom: 0px solid rgba(49, 78, 100, 0.75);
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+}
+
+.nav-link {
+  font-size: 28px;
+}
+
+.navbar-default .navbar-nav > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  background-color: rgba(49, 78, 100, 0) !important;
+}
+
+/* parallax */
+.parallax {
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* page divisions */
+.spacer {
+  height: 10vh;
+  width: 100%;
+}
+
+#bg-1-elem {
+  background-image: url("/images/church_in_winter2.jpg");
+}
+
+#bg-2-elem {
+  background-image: url("/images/assisi-manger-blur.jpg");
+  height: 75vh;
+}
+
+#bg-3-elem {
+  background-image: url("/images/appalachian-1.jpg");
+  height: 75vh;
+  background-size: cover;
+  padding-top: 10%;
+}
+#bg-3-elem > div > div#about-us {
+  background-color: rgba(220, 220, 220, 0.75);
+  color: #000;
+  border-radius: 4px;
+  padding: 4%;
+  margin: 2%;
+  position: relative;
+  top: 50%;
+}
+
+.article-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* -- troubador section styles --*/
+/*-------------------------------*/
+#troubador {
+  margin-top: 25%;
+  color: #fff;
+}
+#troubador h1 {
+  background-color: rgba(42, 38, 38, 0.75);
+  color: #fff;
+  border-radius: 4px;
+  padding: 4%;
+  margin: 2%;
+}
+#troubador .btn {
+  background-color: rgba(74, 101, 87, 0.75);
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  padding: 2%;
+  margin-top: 1%;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+#troubador .btn:hover {
+  background-color: rgba(121, 156, 138, 0.75);
+}
+
+.modal-content {
+  background-color: rgba(220, 220, 220, 0.75);
+  color: rgba(63, 36, 29, 0.9);
+  border-radius: 0px;
+  height: 90vh;
+}
+.modal-content > .modal-body {
+  width: 100%;
+  height: 85vh;
+}
+
+.modal-header {
+  border-bottom: 0px;
+  background-color: rgba(220, 220, 220, 0.75);
+  color: rgba(63, 36, 29, 0.9);
+  border-radius: 0px;
+}
+
+.modal-footer {
+  border-top: 0px;
+  background-color: #fff;
+  color: rgba(63, 36, 29, 0.9);
+  border-radius: 0px;
+}
+
+#content-pane {
+  height: 80vh;
+}
+
+/* -- writings section styles ---*/
+/*-------------------------------*/
+#writings {
+  margin-top: 2%;
+}
+
+.writ-btn {
+  background-color: #fff;
+  color: rgba(63, 36, 29, 0.9);
+  border-radius: 4px;
+  border: 2px solid rgba(63, 36, 29, 0.9);
+  padding: 2%;
+  margin-top: 1%;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+.writ-btn:hover {
+  background-color: white;
+}
+.writ-btn:hover {
+  background-color: rgba(63, 36, 29, 0.9);
+  color: #fff;
+}
+
+.writ-box {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 4px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+
+.footer {
+  background-color: #fff;
+}
+.footer > a > li {
+  display: inline;
+}
+.footer > a > li > h2 {
+  background-color: #fff;
+  color: rgba(63, 36, 29, 0.9);
+  border-radius: 4px;
+  padding: 4%;
+  margin: 2%;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+.footer > a > li > h2:hover {
+  background-color: rgba(63, 36, 29, 0.9);
+  color: #fff;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
